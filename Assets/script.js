@@ -1,29 +1,29 @@
-(function() {
-    emailjs.init("3p6Bt0EuBg5UlBBqN"); // Replace with your actual EmailJS User ID
-})();
+// (function() {
+//     emailjs.init("3p6Bt0EuBg5UlBBqN"); 
+// })();
 
-function sendEmail(event) {
-    event.preventDefault();
+// function sendEmail(event) {
+//     event.preventDefault();
 
-    const form = document.getElementById('contactForm');
-    const formData = new FormData(form);
+//     const form = document.getElementById('contactForm');
+//     const formData = new FormData(form);
 
-    const data = {
-        fname: formData.get('fname'),
-        lname: formData.get('lname'),
-        email: formData.get('email'),
-        phone: formData.get('phone'),
-        message: formData.get('message')
-    };
+//     const data = {
+//         fname: formData.get('fname'),
+//         lname: formData.get('lname'),
+//         email: formData.get('email'),
+//         phone: formData.get('phone'),
+//         message: formData.get('message')
+//     };
 
-    emailjs.send("service_bh6sb67", "template_c3yhtpz", data) // Replace with your actual Service ID and Template ID
-        .then(function(response) {
-            alert('Message sent successfully!');
-        }, function(error) {
-            console.error('Error:', error);
-            alert('An error occurred while sending the message.');
-        });
-}
+//     emailjs.send("service_bh6sb67", "template_c3yhtpz", data)
+//         .then(function(response) {
+//             alert('Message sent successfully!');
+//         }, function(error) {
+//             console.error('Error:', error);
+//             alert('An error occurred while sending the message.');
+//         });
+// }
 
 // Menu show or Hidden 
 

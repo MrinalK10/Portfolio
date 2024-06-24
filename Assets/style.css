@@ -322,6 +322,10 @@ hr {
   }
 }
 
+.show-menu {
+  bottom: 0;
+}
+
 @media screen and (min-width: 766px) {
   .header {
     top: 0;
@@ -1068,6 +1072,7 @@ hr {
   text-align: center;
   box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px var(--t-color);
   transition: 0.5s;
+  background-color: #fff;
   
 }
 .submit-button:hover {
