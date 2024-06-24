@@ -5,39 +5,41 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-   <link rel="stylesheet" href="swiper-bundle.min.css">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="Assets/style.css">
    
- 
-
    <title>Mrinal</title>
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   
+
 </head>
 
 <body>
    <header class="header" id="header">
-      <nav class="navbar container">
-         <a href="#" class="logo">Kumar Mrinal</a>
+      <nav class="navbar">
+         
+         <a href="#home" class="logo">Kumar Mrinal</a>
+     
 
 
          <div class="nav_menu" id="nav-menu">
             <ul class="nav-list grid">
-               <li class="nav-item">
+               <li>
                   <a href="#home" class="nav-link "><i class="uil uil-estate nav-icon"></i>Home</a>
                </li>
-               <li class="nav-item">
+               <li>
                   <a href="#experience" class="nav-link"><i class="uil uil-briefcase-alt nav-icon"></i>Experience</a>
                </li>
-               <li class="nav-item">
+               <li>
                   <a href="#skills" class="nav-link"><i class="uil uil-lightbulb-alt nav-icon"></i>Skills</a>
                </li>
-               <li class="nav-item">
+               <li>
                   <a href="#education" class="nav-link"><i class="uil uil-book nav-icon "></i>Education</a>
                </li>
-               <li class="nav-item">
+               <li>
                   <a href="#project" class="nav-link"><i class="uil uil-atom nav-icon"></i>Projects</a>
                </li>
 
-               <li class="nav-item">
+               <li>
                   <a href="#contact" class="nav-link"><i class="uil uil-phone nav-icon"></i>Contact</a>
                </li>
 
@@ -52,10 +54,11 @@
    </header>
 
    <main class="main">
-      <section class="home section" id="home">
+      <section class="home section grid" id="home">
 
          <div class="home_container container grid">
             <div class="home_content grid">
+               
                <div class="home_social">
                   <a href="https://www.linkedin.com/in/mrinal-kumar10/" class="home_social-icon" target="_blank">
                      <i class="uil uil-linkedin-alt"></i>
@@ -68,11 +71,12 @@
                   </a>
                </div>
 
-               <div class="home-img">
-                  <img src="img/avatar2.png" alt="">
+               <figure class="home-img">
+                  <img src="Assets/img/avatar.png" alt="profile" loading="lazy">
 
-               </div>
-               <div class="home_data">
+               </figure>
+            
+               <article class="home_data">
                   <h1 class="home_title">Hi, I am Mrinal</h1>
                   <h3 class="home_subtitle">Student</h3>
                   <p class="home_description">I'm on a fascinating journey in the world of
@@ -105,10 +109,10 @@
                      challenges.</p>
 
                   <div class="imp">
-                     <a href="#" class="link button--flex">Resume <i class="uil uil-link-alt"></i></a>
-                     <a href="https://www.linkedin.com/in/mrinal-kumar10/details/certifications/" class="link button--flex">Certificates <i class="uil uil-link-alt"></i></a>
+                     <a href="https://drive.google.com/file/d/1Nv0ZI_vECIr4a0mCWu8u_RwlMo9CodYG/view?usp=drive_link" class="link button--flex" target="_blank">Resume <i class="uil uil-link-alt"></i></a>
+                     <a href="https://www.linkedin.com/in/mrinal-kumar10/details/certifications/" class="link button--flex" target="_blank">Certificates <i class="uil uil-link-alt"></i></a>
                   </div>
-               </div>
+               </div> 
             </div>
 
             <div class="home_scroll">
@@ -119,20 +123,31 @@
 
                </a>
             </div>
-         </div>
-         <hr>
+         </article>
+         
       </section>
-   
+      <hr>
 
-   <section class="timeline-section" id="experience">
+   <section class="timeline-section scroll" id="experience">
       <h2 class="section_title"><i class="uil uil-briefcase-alt"></i> Experience</h2>
       <div class="timeline-items">
          <div class="timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">August 2023 - Present</div>
+            <div class="timeline-date">January 2024 - Present</div>
             <div class="timeline-content">
                <div class="img_title">
-                  <img src="img/freelance.png" class="logo2 ">
+                  <img src="Assets/img/freelance.png" class="logo2" loading="lazy" alt="Freelance">
+                  <h2>Freelancing Web App Developer</h2>
+               </div>
+
+            </div>
+         </div>
+         <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">August 2023 - October 2023</div>
+            <div class="timeline-content">
+               <div class="img_title">
+                  <img src="Assets/img/freelance.png" class="logo2" loading="lazy" alt="Freelance">
                   <h2>Freelancing Graphics and Video Editor</h2>
                </div>
 
@@ -143,7 +158,7 @@
             <div class="timeline-date">October 2023 - November 2023</div>
             <div class="timeline-content">
                <div class="img_title">
-                  <img src="img/bharat_intern_logo.jfif" class="logo2">
+                  <img src="Assets/img/bharat_intern_logo.jfif" class="logo2" loading="lazy" alt="BharatIntern">
                   <h2>Web Development Intern at BharatIntern</h2>
                </div>
 
@@ -154,7 +169,7 @@
             <div class="timeline-date">2021-2022</div>
             <div class="timeline-content">
                <div class="img_title">
-                  <img src="img/bitp.jfif" class="logo2 ">
+                  <img src="Assets/img/bitp.jfif" class="logo2" loading="lazy" alt="BITP">
                   <h2>Founder and Manager of BITP Esports club</h2>
                </div>
 
@@ -163,25 +178,25 @@
 
 
       </div>
-      <hr>
+      
    </section>
+   <hr>
 
-
-   <section class="section_skills" id="skills">
+   <section class="section_skills grid" id="skills">
       <h2 class="section_title"><i class="uil uil-lightbulb-alt"></i> Skills</h2>
 
 
 
-      <div class="skillsContainer container grid sectionBorder">
+      <div class="skillsContainer grid scroll">
          <!-- SKILL 1 -->
-         <div class="skillContent">
-            <h3 class="skillTitle">
+         <div class="skill-content">
+            <h3 class="skill-title">
                <i class="uil uil-channel"></i> Programming Languages
             </h3>
             <div class="skillInfo">
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/Java.png" alt="java" />
+                     <img src="Assets/img/Java.png" alt="java" loading="lazy" />
 
                      <h3 class="skillName">Java</h3>
                      <span class="skillSubtitle">Skillful</span>
@@ -190,15 +205,15 @@
 
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/Python.png" alt="Python" />
+                     <img src="Assets/img/Python.png" alt="Python" loading="lazy" />
 
                      <h3 class="skillName">Python</h3>
-                     <span class="skillSubtitle">Intermediate</span>
+                     <span class="skillSubtitle">Skillful</span>
                   </div>
                </div>
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/C.png" alt="C" />
+                     <img src="Assets/img/C.png" alt="C" loading="lazy"/>
 
                      <h3 class="skillName">C</h3>
                      <span class="skillSubtitle">Intermediate</span>
@@ -210,14 +225,14 @@
          </div>
 
          <!-- SKILL 2 -->
-         <div class="skillContent">
-            <h3 class="skillTitle">
+         <div class="skill-content">
+            <h3 class="skill-title">
                <i class="uil uil-brackets-curly"></i> Web Development
             </h3>
             <div class="skillInfo">
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/Html.png" alt="HTML" />
+                     <img src="Assets/img/Html.png" alt="HTML" loading="lazy" />
 
                      <h3 class="skillName">HTML</h3>
                      <span class="skillSubtitle">Skillful</span>
@@ -225,7 +240,7 @@
                </div>
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/Css.png" alt="CSS" />
+                     <img src="Assets/img/Css.png" alt="CSS" loading="lazy" />
 
                      <h3 class="skillName">CSS</h3>
                      <span class="skillSubtitle">Skillful</span>
@@ -233,7 +248,7 @@
                </div>
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/JavaScript.png" alt="Javascript" />
+                     <img src="Assets/img/JavaScript.png" alt="Javascript" loading="lazy" />
 
                      <h3 class="skillName">JavaScript</h3>
                      <span class="skillSubtitle">Beginner</span>
@@ -241,23 +256,63 @@
                </div>
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/Bootstrap.png" alt="Bootstrap" />
+                     <img src="Assets/img/Bootstrap.png" alt="Bootstrap" loading="lazy" />
 
                      <h3 class="skillName">Bootstrap</h3>
+                     <span class="skillSubtitle">Intermediate</span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/Tailwind.png" alt="Tailwind" loading="lazy" />
+
+                     <h3 class="skillName">Tailwind</h3>
+                     <span class="skillSubtitle">Intermediate</span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/sass.png" alt="Sass" loading="lazy" />
+
+                     <h3 class="skillName">Sass/Scss</h3>
+                     <span class="skillSubtitle">Intermediate</span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/React.png" alt="React" loading="lazy" />
+
+                     <h3 class="skillName">React</h3>
+                     <span class="skillSubtitle">Beginner</span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/Angular.png" alt="Angular" loading="lazy" />
+
+                     <h3 class="skillName">Angular</h3>
+                     <span class="skillSubtitle">Beginner</span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/Flask.png" alt="Flask" loading="lazy" />
+
+                     <h3 class="skillName">Flask</h3>
                      <span class="skillSubtitle">Intermediate</span>
                   </div>
                </div>
 
             </div>
          </div>
-         <div class="skillContent">
-            <h3 class="skillTitle">
+         <div class="skill-content">
+            <h3 class="skill-title">
                <i class="uil uil-cloud-check"></i> Others
             </h3>
             <div class="skillInfo">
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/sql.png" alt="MySQL" />
+                     <img src="Assets/img/sql.png" alt="MySQL" loading="lazy" />
 
                      <h3 class="skillName">MySQL</h3>
                      <span class="skillSubtitle">Intermediate</span>
@@ -265,26 +320,54 @@
                </div>
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/linux.png" alt="Linux" />
+                     <img src="Assets/img/linux.png" alt="Linux" loading="lazy"/>
 
                      <h3 class="skillName">Linux</h3>
-                     <span class="skillSubtitle">Intermediate</span>
+                     <span class="skillSubtitle">Beginner</span>
                   </div>
                </div>
                <div class="skillData">
                   <div class="skillBlob">
-                     <img src="img/git.png" alt="Git" />
+                     <img src="Assets/img/git.png" alt="Git" loading="lazy" />
 
                      <h3 class="skillName">Git</h3>
                      <span class="skillSubtitle">Beginner</span>
                   </div>
                </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/dsa.png" alt="DSA" loading="lazy" />
+
+                     <h3 class="skillName">DSA</h3>
+                     <span class="skillSubtitle">Intermediate</span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/plsql.png" alt="PLSQL" loading="lazy" />
+
+                     <h3 class="skillName">PL/SQL</h3>
+                     <span class="skillSubtitle">Intermediate
+                     </span>
+                  </div>
+               </div>
+               <div class="skillData">
+                  <div class="skillBlob">
+                     <img src="Assets/img/mongo.png" alt="mongo" loading="lazy" />
+
+                     <h3 class="skillName">MongoDB</h3>
+                     <span class="skillSubtitle">Beginner
+                     </span>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
+      
+      </section>
       <hr>
 
-      <section class="timeline-edusection" id="education">
+      <section class="timeline-edusection scroll" id="education">
          <h2 class="section_title"><i class="uil uil-book"></i> Education</h2>
          <div class="education-section">
 
@@ -292,6 +375,7 @@
                <h3 class="degree">Masters in Computer Application</h3>
                <p><span class="university">PES University</span></p>
                <p class="date">2023 - Present</p>
+               <p>8.83 SGPA</p>
             </div>
             <div class="education-item">
                <h3 class="degree">Bachelors in Computer Application</h3>
@@ -302,16 +386,17 @@
 
          </div>
          </div>
-         <hr>
+         
       </section>
+      <hr>
 
-      <section class="project section" id="project">
+      <section class="project scroll" id="project">
          <h2 class="section_title"><i class="uil uil-atom"> </i>Projects</h2>
 
          <div class="container1">
             <div class="card__container">
                <article class="card__article">
-                  <img src="img/portfolio3.jpg" alt="image" class="card__img">
+                  <img src="Assets/img/project1.png" alt="College ERP" class="card__img" loading="lazy">
    
                   <div class="card__data">
                      <!-- <span class="card__description">
@@ -322,7 +407,19 @@
                </article>
    
                <article class="card__article">
-                  <img src="img/portfolio2.jpg" alt="image" class="card__img">
+                  <img src="Assets/img/project2.png" alt="image" class="card__img" loading="lazy">
+                  <div class="card__data">
+                     <!-- <span class="card__description">Netflix Clone</span> -->
+                     <h2 class="card__title">Hastkaart- An E-Commerce Web App</h2>
+                     <a href="https://www.linkedin.com/in/mrinal-kumar10/details/projects/" class="card__button">Info</a><br>
+                     <a href="https://www.hastkaart.com/" class="card__button">Url</a>
+                     
+                  </div>
+                  
+               </article>
+   
+               <article class="card__article">
+                  <img src="Assets/img/project3.png" alt="image" class="card__img" loading="lazy">
    
                   <div class="card__data">
                      <!-- <span class="card__description">Netflix Clone</span> -->
@@ -330,23 +427,14 @@
                      <a href="https://github.com/MrinalK10/Bharat_Intern/tree/main/BharatIntern/Netflix%20Clone" class="card__button">Code</a>
                   </div>
                </article>
-   
-               <article class="card__article">
-                  <img src="img/portfolio4.jpg" alt="image" class="card__img">
-   
-                  <div class="card__data">
-                     <!-- <span class="card__description">Song Player</span> -->
-                     <h2 class="card__title">FIFA WC Songs Player</h2>
-                     <a href="#" class="card__button">Code</a>
-                  </div>
-               </article>
             </div>
          </div>
-  <hr>
+  
 
       </section>
+      <hr>
 
-     <section class="contact section" id="contact">
+     <section class="contact scroll" id="contact">
       <h2 class="section_title"><i class="uil uil-phone"> </i>Contact Me</h2>
       
       <section id="section-wrapper">
@@ -357,7 +445,9 @@
                  <ul class="info-details">
                      <li>
                          
-                         <span><i class="uil uil-phone"></i></span> <a href="">+91 7021239857</a>
+                         <span><i class="uil uil-instagram"></i></span> <a href="https://www.instagram.com/mrinalsinghk11/" target="_blank">mrinalsinghk11
+                           
+                        </a>
                      </li>
                      <li>
                          
@@ -365,15 +455,15 @@
                      </li>
                      <li>
                          
-                         <span><i class="uil uil-linkedin-alt"></i>:</span> <a href="#">mrinal-kumar10</a>
+                         <span><i class="uil uil-linkedin-alt"></i></span> <a href="https://www.linkedin.com/in/mrinal-kumar10/">mrinal-kumar10</a>
                      </li>
                  </ul>
                  <ul class="social-icons">
                     
              </div>
              <div class="form-wrap">
-                 <form action="#" method="POST">
-                     <h2 class="form-title">Send us a message</h2>
+                 <form id="contactForm" onsubmit="sendEmail(event)">
+                     <h2 class="form-title">Send me a message</h2>
                      <div class="form-fields">
                          <div class="form-group">
                              <input type="text" class="fname" placeholder="First Name">
@@ -409,13 +499,13 @@
 
             <ul class="footer_links">
                <li>
-                  <a href="Home" class="footer_link">Home</a>
+                  <a href="#home" class="footer_link">Home</a>
                </li>
                <li>
-                  <a href="Home" class="footer_link">Skills</a>
+                  <a href="#skills" class="footer_link">Skills</a>
                </li>
                <li>
-                  <a href="Home" class="footer_link">Contact Me</a>
+                  <a href="#contact" class="footer_link">Contact Me</a>
                </li>
             </ul>
 
@@ -439,19 +529,7 @@
       <i class="uil uil-arrow-up scrollup_icon"></i>
    </a>
 
-     
-
-
-
-
-
-
-
-
-
-       
-      <script src="swiper-bundle.min.js"></script>
-      <script src="script.js"></script>
+      <script src="Assets/script.js"></script>
       
 
 

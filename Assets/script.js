@@ -1,3 +1,30 @@
+(function() {
+    emailjs.init("3p6Bt0EuBg5UlBBqN"); // Replace with your actual EmailJS User ID
+})();
+
+function sendEmail(event) {
+    event.preventDefault();
+
+    const form = document.getElementById('contactForm');
+    const formData = new FormData(form);
+
+    const data = {
+        fname: formData.get('fname'),
+        lname: formData.get('lname'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        message: formData.get('message')
+    };
+
+    emailjs.send("service_bh6sb67", "template_c3yhtpz", data) // Replace with your actual Service ID and Template ID
+        .then(function(response) {
+            alert('Message sent successfully!');
+        }, function(error) {
+            console.error('Error:', error);
+            alert('An error occurred while sending the message.');
+        });
+}
+
 // Menu show or Hidden 
 
 const navMenu = document.getElementById('nav-menu'),
@@ -32,23 +59,7 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click',linkAction))
 
-let swiper = new Swiper(".projectContainer", {
-  loop: true,
-  spaceBetween: 24,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  breakpoints: {
-    1200: {
-      slidesPerView: 2,
-      spaceBetween: -56,
-    },
-  },
-});;
+
 
   function scrollHeader(){
     const nav = document.getElementById('header')
@@ -92,3 +103,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
