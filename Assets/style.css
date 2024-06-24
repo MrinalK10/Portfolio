@@ -583,7 +583,7 @@ hr {
     padding-left: 37px;
   }
   .timeline-dot {
-    left: 0;
+    left: 0.5rem;
   }
 }
 
